@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Geri Sayım</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <audio id="alert-sound" src="ses.mp3"></audio>
+  <body>
+    <div class="container">
+      <h1>Geri Sayım</h1>
+      <div class="timer">
+        <input type="number" id="hours" placeholder="Saat girin">
+        <input type="number" id="minutes" placeholder="Dakika girin">
+        <input type="number" id="seconds" placeholder="Saniye girin">
+        <button id="start">Başlat</button>
+        <button id="reset">Sıfırla</button>
+      </div>
+      <div class="countdown">
+        <span id="hoursDisplay">00</span>:<span id="minutesDisplay">00</span>:<span id="secondsDisplay">00</span>
+      </div>
+    </div>
+    <div class="presets">
+      <button class="preset" data-hours="0" data-minutes="75" data-seconds="0">LGS/1</button>
+      <button class="preset" data-hours="0" data-minutes="80" data-seconds="0">LGS/2</button>
+      <button class="preset" data-hours="0" data-minutes="165" data-seconds="0">TYT</button>
+      <button class="preset" data-hours="0" data-minutes="180" data-seconds="0">AYT</button>
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
